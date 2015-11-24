@@ -1,0 +1,10 @@
+<div ng-controller="AppCtrl">
+	<ul class="transactions-list">
+		<li ui-sref="main.transactions.details({ id: transaction._id })" ng-repeat="transaction in filteredData = ( transaction_data | daterange:'Day')  track by $index">
+			<h2>{{transaction.merchant}}</h2>
+			<h3>{{transaction.amount | currency: '$'}}</h3>
+			<h4>{{transaction.category}}</h4>
+		</li>
+	</ul>
+	<p ng-show="!filteredData.length">No Transactions</p>
+</div>

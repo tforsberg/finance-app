@@ -1,0 +1,50 @@
+* {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-font-smoothing: subpixel-antialiased;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	background: #272727;
+	font-family: "Lato", Helvetica, sans-serif !important;
+	font-weight: 300;
+	overflow: hidden;
+	@extend %no-padding-or-margin
+}
+
+h1 {
+	margin: .75em auto;
+	padding: 0;
+	font-weight: normal;
+	text-align: center;
+	font-size: 1.175em;
+}
+
+header {
+	width: 100%;
+	z-index: 10;
+	position: fixed;
+	background-color: $app-header-bg-color;
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	transition: all .175s ease-in-out;
+	h1 {
+		color: #fff;
+		padding-top: .25em;
+		text-transform: capitalize;
+	}
+}
+
+a { text-decoration: none }
+label, input { display: block; }
+figure { margin: 0 auto; }
+ul { @extend %no-padding-or-margin; list-style-type: none; }
+svg { @extend %no-padding-or-margin }

@@ -1,0 +1,35 @@
+.categorized-transactions li,
+.transactions-list li {
+	clear: both;
+	border-bottom: 1px solid #eee;
+	padding: 1em;
+}
+
+.categorized-transactions h2,
+.transactions-list h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 1.175em;
+	font-weight: normal;
+	text-align: left;
+}
+
+.categorized-transactions h3,
+.transactions-list h3 {
+	float: right;
+	margin-top: -.75em;
+	font-size: 1.25em;
+	font-weight: 300;
+	color: #B95649;
+	text-align: left;
+}
+
+.categorized-transactions h4,
+.transactions-list h4 {
+	margin: 0;
+	font-weight: 300;
+	text-align: left;
+	color: #aaa;
+	font-size: .75em;
+	margin: .25em 0 0 0;
+}

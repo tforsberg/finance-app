@@ -1,0 +1,13 @@
+<header>
+	<h1>{{appName}}</h1>
+	<button class="header-btn header-primary-btn icon-directions" ui-sref="panel.menu"></button>
+	<button class="header-btn header-secondary-btn icon-settings" ui-sref="panel.settings"></button>
+	<nav class="view-navigation">
+		<a ui-sref="main.{{appName}}.day" 	ui-sref-active="is-selected">Day</a>
+		<a ui-sref="main.{{appName}}.week" 	ui-sref-active="is-selected">Week</a>
+		<a ui-sref="main.{{appName}}.month" ui-sref-active="is-selected">Month</a>
+		<a ui-sref="main.{{appName}}.year" 	ui-sref-active="is-selected">Year</a>
+	</nav>
+	<a ui-sref="main.transactions.new" class="new-transaction-btn"><!-- label --></a>
+</header>
+<section class="view-selected" ui-view></section>

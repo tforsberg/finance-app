@@ -1,0 +1,17 @@
+<h3>Details</h3>
+<form id="transaction-details-form" class="form" ng-submit="">
+	<!-- inputs -->
+	<input type="hidden" id="idee" ng-value="transactions.id"></label>
+	<label for="merchant">Merchant<input type="text" id="merchant" ng-value="transactions.merchant"></label>
+	<label for="description">Description<input type="text" id="description" ng-model="transactions.description"></label>
+	<label for="date">Date<input type="date" id="date" ng-model="transactions.date"></label>
+	<label for="amount">Amount<input type="text" id="amount" ng-model="transactions.amount"></label>
+	<label for="classification">Classification<input type="text" id="classification" ng-model="transactions.classification"></label>
+	<label for="category">Category<input type="text" id="category" ng-model="transactions.category"></label>
+	<label for="split">Split<input type="checkbox" id="split" ng-model="transactions.split"></label>
+	<!-- btns -->
+	<input type="submit" value="Submit" ng-click="update(transactions)">
+	<input type="button" value="Cancel">
+	<br>
+	<input type="button" value="Delete" ng-click="delete(transactions.id)">
+</form>
